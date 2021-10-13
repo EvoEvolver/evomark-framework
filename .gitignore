@@ -1,2 +1,5 @@
 node_modules
-packages
+./packages
+./projects
+./test*
+*/.evomark_ir

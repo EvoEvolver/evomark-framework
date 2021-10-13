@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "node ./dev.js",
     "setup": "node ./setup.js"
+    
   },
   "dependencies": {
     "minimist": "^1.2.5"
