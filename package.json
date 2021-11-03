@@ -3,7 +3,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "node ./dev.js",
-    "setup": "node ./setup.js"
+    "setup": "node ./setup.js",
+    "evomark-it": "node ./packages/evomark-loader/index.js"
     
   },
   "dependencies": {
