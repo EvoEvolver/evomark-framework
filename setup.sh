@@ -6,7 +6,7 @@ git clone https://github.com/EvoEvolver/evomark-it.git
 git clone https://github.com/EvoEvolver/evomarked-nuxt.git
 cd evomark-loader
 npm install
-cd evomark-it
+cd ../evomark-it
 npm install
-cd evomarked-nuxt
+cd ../evomarked-nuxt
 npm install
