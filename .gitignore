@@ -1,5 +1,6 @@
 node_modules
-packages/
 projects/
 test*/
 */.evomark_ir
+.ssh
+.deploy

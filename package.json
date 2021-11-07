@@ -5,9 +5,9 @@
     "dev": "node ./dev.js",
     "setup": "node ./setup.js",
     "evomark-it": "node ./packages/evomark-loader/index.js"
-    
   },
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "toml": "^3.0.0"
   }
 }
