@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 const spawnSync = require('child_process').spawnSync;
 function runCmdSync(cmd, args, cwd) {
@@ -10,10 +11,9 @@ function runCmdSync(cmd, args, cwd) {
 
 const path = require('path')
 
-var package_root = path.join(__dirname, "../package")
+var package_root = path.join(__dirname, "../packages")
 
 runCmdSync("git", ["pull"], path.join(__dirname, ".."))
-
 runCmdSync("git", ["pull"], package_root + "/evomark-loader")
 runCmdSync("git", ["pull"], package_root + "/evomark-it")
 runCmdSync("git", ["pull"], package_root + "/evomarked-nuxt")
