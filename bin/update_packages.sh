@@ -1,3 +1,4 @@
+git pull
 cd packages
 cd evomark-loader
 git pull

@@ -24,7 +24,6 @@ Here we provide script for install the dependencies on ubuntu
 sudo apt-get update
 sudo apt-get install nodejs
 sudo apt-get install npm
-sudo npm cache clean -f
 sudo npm install -g n # Update nodejs
 sudo n stable # Update nodejs
 sudo npm install -g yarn
@@ -36,7 +35,7 @@ cd
 git clone https://github.com/EvoEvolver/evomark-framework.git
 cd evomark-framework
 yarn setup
-npm install -g .
+npm install -g . # Install EvoMark Framework as a global package
 ```
 
 ## Usage

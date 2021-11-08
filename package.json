@@ -7,13 +7,13 @@
     "dev": "node ./bin/dev.js",
     "setup": "node ./bin/setup.js",
     "evomark-it": "node ./packages/evomark-loader/index.js",
-    "project": "./bin/new_project.sh",
     "build": "./bin/build.sh"
   },
   "bin": {
     "em-init": "./bin/init_project.js",
     "em-dev": "./bin/dev.js",
-    "em-deploy": "./bin/ssh_deploy.js"
+    "em-deploy": "./bin/ssh_deploy.js",
+    "em-update": "./bin/update_packages.js"
   },
   "dependencies": {
     "fs-extra": "^10.0.0",
