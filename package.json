@@ -1,10 +1,13 @@
 {
+  "name": "evomark-framework",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node ./dev.js",
-    "setup": "node ./setup.js",
-    "evomark-it": "node ./packages/evomark-loader/index.js"
+    "dev": "node ./bin/dev.js",
+    "setup": "node ./bin/setup.js",
+    "evomark-it": "node ./packages/evomark-loader/index.js",
+    "project": "./bin/new_project.sh",
+    "build": "./bin/build.sh"
   },
   "dependencies": {
     "minimist": "^1.2.5",
