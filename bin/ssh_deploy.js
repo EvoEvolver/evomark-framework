@@ -1,20 +1,23 @@
+#!/usr/bin/env node
+
 const toml = require("toml")
 const fs = require("fs")
 const path = require("path")
 var args = process.argv.slice(2)
-const deploy_config_path = args[0] + "/.deploy"
+var project_path = args[0] || "."
+var deploy_config_path = project_path + "/.deploy"
 var config_src = fs.readFileSync(deploy_config_path + "/config.toml", "utf8")
 var config = toml.parse(config_src)
 var combined_addr = config.ssh_addr
 if (config.ssh_user) combined_addr = config.ssh_user + "@" + combined_addr
 var ssh_key_path = path.join(deploy_config_path, config["ssh_key"])
 var ssh_args = ["-i", ssh_key_path, combined_addr]
-var output_path = path.join(__dirname, "packages/evomarked-nuxt/.output")
+var output_path = path.join(__dirname, "../packages/evomarked-nuxt/.output")
 var deploy_path = config.deploy_path || "~/evomark"
 var scp_args = ["-i", ssh_key_path, "-r", output_path, combined_addr + ":" + deploy_path]
 //console.log(scp_args.join(" "))
 const spawn = require('child_process').spawn;
-
+const spawnSync = require('child_process').spawnSync;
 function runCommand(cmd, args, onEnd) {
     console.log(cmd, args)
     var cmd_runner = spawn(cmd, args, { encoding: 'utf-8' });
@@ -30,8 +33,20 @@ function runCommand(cmd, args, onEnd) {
     });
 }
 
+console.log(project_path)
+spawnSync("node", [path.join(__dirname, "../packages/evomark-loader/index.js"),"--src", project_path ,"--watch", "false"], {
+    encoding: 'utf-8',
+    stdio: [process.stdin, process.stdout, process.stderr],
+} )
+
+spawnSync("yarn", ["build"], {
+    encoding: 'utf-8',
+    cwd: path.join(__dirname,"../packages/evomarked-nuxt/"),
+    stdio: [process.stdin, process.stdout, process.stderr],
+} )
+
 const app_name = "evomark"
-var cmd_stop_server = "sudo -- sh -c '"+["pm2", "delete", app_name].join(" ")+"'"
+var cmd_stop_server = "sudo -- sh -c '" + ["pm2", "delete", app_name].join(" ") + "'"
 var cmd_delete = ['rm', '-r', deploy_path].join(" ")
 var cmd_run_server = ["pm2", "-f", "start", path.join("./server/index.mjs"), "--name", app_name].join(" ")
 

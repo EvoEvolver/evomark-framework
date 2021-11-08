@@ -36,31 +36,19 @@ cd
 git clone https://github.com/EvoEvolver/evomark-framework.git
 cd evomark-framework
 yarn setup
+npm install -g .
 ```
 
 ## Usage
-
-To start a EvoMark Project, you need to be in the directory where EvoMark Framework is setup.
-```bash
-cd ~/evomark-framework
-```
-We recommend you to work with vscode by
-```bash
-code ~/evomark-framework
-```
 You can initialize a new project by
 ```bash
-yarn project [your project name]
+em-init <project name/path>
 ```
 You can preview the new project by starting a development server
 ```
-yarn dev --src [your project name]
+em-dev <project name/path>
 ```
-Or you can preview the document by
-```
-yarn dev --src docs_src
-```
-During the run of the development server, all the change of source file with be detected automatically. Therefore, you don't need to build it by your self.
+During the run of the development server, all the change of source file will be detected automatically. Therefore, you don't need to build it by your self.
 
 ## Publish 
 
@@ -82,6 +70,6 @@ deploy_path = "./evoevolver"
 ```
 And in `.deploy` there should be the private key `./key.pem` for the ssh server.
 
-With `.deploy` setup, one can call `./build_deploy.sh [project-path]` in the root of EvoMark Framework to deploy.
+With `.deploy` setup, one can call `em-deploy` in the root of the project to deploy.
 
 You may check the source code to see what is actual happening.
