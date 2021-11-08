@@ -1,0 +1,7 @@
+[[author]]
+givenName = "Foo"
+familyName = "Bar"
+affil = ""
+note = ["email"]
+[authorNotes]
+email = "foo.bar@gmail.com"
