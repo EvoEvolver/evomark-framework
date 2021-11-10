@@ -1,7 +1,7 @@
 [[author]]
 givenName = "Foo"
 familyName = "Bar"
-affil = ""
+affil = "Institute of Foo and Bar"
 note = ["email"]
 [authorNotes]
 email = "foo.bar@gmail.com"

@@ -21,9 +21,9 @@ EvoMark Framework requires the following dependencies to install
 
 Here we provide script for install the dependencies on ubuntu
 ```bash
-sudo apt-get update
-sudo apt-get install nodejs
-sudo apt-get install npm
+sudo apt update
+sudo apt -y install nodejs # Install nodejs
+sudo apt -y install npm # Install npm
 sudo npm install -g n # Update nodejs
 sudo n stable # Update nodejs
 sudo npm install -g yarn
@@ -35,11 +35,11 @@ cd
 git clone https://github.com/EvoEvolver/evomark-framework.git
 cd evomark-framework
 yarn setup
-npm install -g . # Install EvoMark Framework as a global package
+sudo npm install -g . # Install EvoMark Framework as a global package
 ```
 
 ## Usage
-You can initialize a new project by
+In any path, you can initialize a new project by
 ```bash
 em-init <project name/path>
 ```
@@ -47,7 +47,7 @@ You can preview the new project by starting a development server
 ```
 em-dev <project name/path>
 ```
-During the run of the development server, all the change of source file will be detected automatically. Therefore, you don't need to build it by your self.
+During the run of the development server, all the change of source file will be detected automatically. Therefore, you don't need to build it by yourself.
 
 ## Publish 
 
