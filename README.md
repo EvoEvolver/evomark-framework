@@ -9,6 +9,11 @@ EvoMark Framework is a system which enables intuitive plain-text based content p
     - We are planing to develop
         1. evomarked-latex: a framework for organize the evomark-it in order to produce .pdf files.
 
+## Discuss
+
+Interested? Meet us on
+[![Gitter](https://badges.gitter.im/EvoEvolver/community.svg)](https://gitter.im/EvoEvolver/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) !
+
 ## Install
 
 So far, EvoMark Framework has **only been tested in linux** environment. To use them in Windows or MacOS may need special knowledge. 
