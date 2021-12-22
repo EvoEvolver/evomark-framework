@@ -1,23 +1,12 @@
 {
   "name": "evomark-framework",
-  "main": "./lib/index.js",
   "license": "MIT",
   "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "node ./bin/dev.js",
-    "setup": "node ./bin/setup.js",
-    "evomark-it": "node ./packages/evomark-loader/index.js",
-    "build": "./bin/build.sh"
-  },
-  "bin": {
-    "em-init": "./bin/init_project.js",
-    "em-dev": "./bin/dev.js",
-    "em-deploy": "./bin/ssh_deploy.js",
-    "em-update": "./bin/update_packages.js"
-  },
-  "dependencies": {
-    "fs-extra": "^10.0.0",
-    "minimist": "^1.2.5",
-    "toml": "^3.0.0"
+    "t-dev": "yarn em-dev --templateDev true"
   }
 }

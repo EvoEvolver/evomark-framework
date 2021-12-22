@@ -5,3 +5,4 @@ test*/
 .deploy
 *.pem
 yarn-error.log
+yarn.lock

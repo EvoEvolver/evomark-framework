@@ -1,3 +1,0 @@
-mathMacros:
-  \ket: "|#1\\rangle"
-  \bra: "\\langle #1|"
