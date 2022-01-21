@@ -40,7 +40,7 @@ For windows, you can go to https://nodejs.org/en/download/ to download and insta
 
 Then, yarn can be installed by the installer in https://classic.yarnpkg.com/latest.msi. **You may need to restart to make the installations into effect**.
 
-### Start!
+### Get ready!
 
 With dependencies installed, Evomark framework can be installed by (Here we install it in user's home path)
 ```bash
@@ -61,6 +61,8 @@ You can preview the new project by starting a development server
 yarn em-dev <project name/path>
 ```
 During the run of the development server, all the change of source file will be detected automatically. Therefore, you don't need to build it by yourself.
+
+Finally, you can go to http://localhost:3000/ to see the output of Evomark. I hope you will enjoy it!
 
 ## Publish 
 
