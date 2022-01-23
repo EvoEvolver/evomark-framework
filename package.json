@@ -7,6 +7,6 @@
     "packages/*"
   ],
   "scripts": {
-    "t-dev": "yarn em-dev --templateDev true"
+    "t-dev": "yarn em-dev test_project --templateDev true"
   }
 }
