@@ -3,6 +3,12 @@
 title = "Writing slides by Evomark"
 ---
 
-========= SlidesBox
 
-==========
+
+
+You can set the voice language of a slides by opening it like
+==== Code
+===== SlidesBox {voiceLang: "Japanese"}
+====
+
+[Non-English Language](voice-language)

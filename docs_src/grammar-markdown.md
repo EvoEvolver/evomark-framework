@@ -5,7 +5,81 @@ title = "Grammars from Markdown"
 
 === Title ===
 
-======== SlidesBox
+Here we list the Markdown grammars that are used in Evomark. You can also see the [#pre:md] for a vivid presentation.
+
+# Headings
+
+=== Code{clk:""}
+# Section
+## Subsection
+###Subsubsection (Bad example: A space must be put after #)
+===
+
+==== BoxQuote
+# Section's title
+## Subsection's title
+###Subsubsection (Bad example: A space must be put after #)
+====
+
+# Math
+=== Code{clk:""}
+If $a$ and $b$ are real numbers, $a+b=b+a$.
+$$
+a+b=b+1
+$$
+===
+==== BoxQuote
+If $a$ and $b$ are real numbers, $a+b=b+a$.
+$$
+a+b=b+1
+$$
+====
+
+# Bullet-points
+
+=== Code{clk:""}
+- First, $a+b = 1$.
+- Second, $a-b = 2$.
+- What is $a$ and $b$?
+===
+
+=== Code{clk:"then"}
+1. First, $a+b = 1$.
+1. Second, $a-b = 2$.
+1. What is $a$ and $b$?
+===
+==== BoxQuote
+- First, $a+b = 1$.
+- Second, $a-b = 2$.
+- What is $a$ and $b$?
+
+1. First, $a+b = 1$.
+1. Second, $a-b = 2$.
+1. What is $a$ and $b$?
+====
+
+# Inline-decoration
+
+=== Code
+*I'm italicized!*
+**I'm bold!**
+`I'm quoted`
+===
+
+=== BoxQuote
+*I'm italicized!*
+
+**I'm bold!**
+
+`I'm quoted`
+===
+
+# What's next
+
+- [Evomark grammars](grammar-evomark)
+- [Removed Markdown grammars](#grammar-removed)
+
+======== SlidesBox {id:"pre:md"}
 
 # Markdown grammars in Evomark
 
@@ -117,8 +191,8 @@ You can wrap a fragment of texts by special signs shown here to make texts styli
 # What's next
 
 - Not all Markdown grammars are used in Evomark. 
-    - [Removed Markdown grammars](grammar-removed)
-    === Voice {clk:""}
+    - [$clk] [Removed Markdown grammars](#grammar-removed)
+    === Voice
     So far, you have learned all the essential markdown grammars in Evomark. However, you should notice that not all markdown grammars are used in Evomark. Here, we provide a document for it.
     ===
 - [$clk]Let's dive into Evomark! 
@@ -128,3 +202,69 @@ You can wrap a fragment of texts by special signs shown here to make texts styli
     ===
 
 ========
+
+
+# Removed Markdown grammars {id:"grammar-removed"}
+
+
+Evomark only adopt some of the grammars of Markdown. Here we list some grammars that is invalid in Evomark. Most of them are replaced by containers in Evomark.
+
+# Code environment
+
+=== Code {lang:"markdown"}
+'''javascript
+Code evironment by ''' is not supported.
+'''
+===
+
+Please use Code container instead
+
+==== Code
+=== Code {lang:"javascript"}
+function hello(){
+    console.log("Hello world");
+}
+===
+====
+
+=== Code {lang:"javascript"}
+function hello(){
+    console.log("Hello world");
+}
+===
+
+Also, unlike Markdown, Indent will also not produce a code environment in Evomark.
+
+# Quote environment
+
+=== Code {lang:"markdown"}
+> Quote by ">" is not supported.
+===
+
+==== Code
+=== Quote
+Please use Quote container instead.
+===
+====
+
+# Images
+
+==== Code {lang:"markdown"}
+![Image import such as this is not supported](Irena.jpg)
+====
+
+==== Code
+=== Figure {src:"Irena.jpg"}
+Caption texts: Please use Figure container for figures with caption 
+and use Image container for figures without caption.
+===
+
+=== Image {src:"Irena.jpg"} ===
+
+====
+
+=== Figure {src:"Irena.jpg"}
+Caption texts: Please use Figure container for figures with caption and use Image container for figures without caption.
+===
+
+=== Image {src:"Irena.jpg"} ===

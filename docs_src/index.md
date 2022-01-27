@@ -2,74 +2,68 @@
 ---
 title = "Introduction to Evomark"
 ---
-
-=== Title ===
-
-======== SlidesBox
----Slide
-section = "Introduction"
----
-
-# Introduction to Evomark
-
-=== Voice
-Hi everyone, here I will introduce you what is Evomark.
+==== Box {style:"max-width:35rem;margin:auto;"}
+=== Image {src:"./evomark.svg"} ===
+====
+===  HTML
+<p style="text-align:center;font-size:1.5rem;">
+Powerful website generator for collaborative academia
+</p>
 ===
-
---- Slide 
-title = "Properties"
----
-
-# What is Evomark?
-
-- [$clk]Evomark is a Markdown-like marking language
-    === Voice
-    First, Evomark is a Markdown-like language. Evomark uses many grammars of Markdown to make it eaiser to read and write.
-    ===
-- [$clk]Evomark implements many useful functionalities of LaTeX, such as citaion and theorem environments.
-    === Voice
-    However, the vanilla version of Markdown is too simple, which does not support many important functionalities that is required by academic writing. Evomark is invented to change this point and bring the schorlars a language simpler but as good as LaTeX.
-    ===
-- [$clk]Evomark implements a built-in component of automatic slides-show.
-    === Voice
-    Moreover, people can use Evomark to build automatic slides-shows like the one you are listening. With Evomark, people can easily make an automatic presentation. It will save thes schorlars a lot of time as recording a video is usually very laborious.
-    ===
-- [$clk]Evomark is designed for large-scale collaboration.
-    === Voice
-    Finally, Evomark is designed to make academic writing open-source. With highly readable source codes and project directory structure, people can collarborate more easily on github with Evomark.
-    ===
-
---- Slide ---
-=== Voice{clk:""}
-Here, we prepared a lots of materials for people from different background to learn Evomark.
+===  HTML
+<p style="text-align:center;">
+<a href="/install">Install</a> | <a href="#docs">Docs</a> | <a href="/introduction">Presentations</a>
+</p>
 ===
+# Features
 
-- [$clk] [Basic grammars from Markdown](grammar-markdown)
-    === Voice
-    If you are new to Markdown, here we prepared a tutorial for the Markdown grammars that are used in Evomark.
-    ===
-- [$clk] [New grammars in Evomark](grammar-evomark)
-- [$clk](then) [How to make slides in Evomark](slides-evomark)
-    === Voice
-    If you are familar with Markdown, you can directly jump into the new grammars of Evomark.
-    ===
-- [$clk] [The future of open-source academia by Evomark](open-source-future).
-    === Voice
-    If you are very interested in open-source academic production, we prepared a material to explain why a new marking language can help this and what is our plan.
-    ===
-========
+- **Supports what LaTeX supports**
+    - Citation, reference, auto-indexing, theorems, math-macros, title&authors, table of contents. 
+    - Everything you can imagine in LaTeX is included in Evomark.
+- **Automatic presentation tools built-in**
+    - You can make not only slides, but automatic presentation which can speak by Evomark. 
+    - Every single sentences in the presentation can be changed by modify the source code.
+- **Built on Modern browser eco-system**
+    - Making next generation of academic contents with interactive components, sematic HTML tags and even blockchain.
 
-# Welcome to the world of Evomark!
+# Ideas
 
-If you are new to Markdown, here we prepared a tutorial for the Markdown grammars that are used in Evomark.
+- **A collaborative academia makes more possibilities**
+    - Making knowledge suit the cognition system of human-beings is not easier than making awesome softwares. However, while softwares can gather thousands of people to together develop it, textbooks/online courses usually have authors less than 10.
+    - Evomark aims to change this point by providing a marking language that is powerful and easy to read and review, so that contributors' commits can be efficiently reviewed by reviewers of git repos and then being adopted.
+- **Media of academic contents should be TeX and PDF**
+    - TeX focuses more on typesetting but not record of contents and tends to mix up style and contents.
+    - HTML is much easier to be analyzed by computer programs. Using HTML to convey academic contents can make large scale automatic analyze of academic contents easier. This point will become more and more important with the development of natural language processing technologies.
+    - HTML on modern browsers can be made responsive, so that people can easily read it on small screen devices.
 
-- [Basic grammars from Markdown](grammar-markdown)
 
-If you are familar with Markdown, you can directly jump into the new grammars of Evomark.
+# Welcome to the world of Evomark! {id:"docs"}
 
-- [New grammars in Evomark](grammar-evomark)
-- [How to make slides in Evomark](slides-evomark)
+**Here are the documents**
 
-If you are very interested in open-source academic production, we prepared a material to explain why a new marking language can help this and what is our plan.
+- New to Markdown? 
+    - [Basic grammars from Markdown](grammar-markdown)
+- Grammars in Evomark.
+    - [New grammars in Evomark](grammar-evomark)
+    - [How to make slides in Evomark](slides-evomark)
+- Our plan on open-source academia
+    - [The future of open-source academia by Evomark](open-source-future).
 
-- [The future of open-source academia by Evomark](open-source-future).
+
+# Finally
+
+Let's make a theorem as easy as 123.
+==== Code
+=== Theorem {id:"mc2", title:"Mass and Energy"}
+$$
+E=mc^2
+$$
+===
+Look at [#mc2]! (Try put your mouse on ⬅)
+====
+=== Theorem {id:"mc2", title:"Mass and Energy"}
+$$
+E=mc^2
+$$
+===
+Look at [#mc2]! (Try put your mouse on ⬅)

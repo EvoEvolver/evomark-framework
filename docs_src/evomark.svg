@@ -1,0 +1,18 @@
+<svg width="1000" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#2e75b6" id="canvas_background" height="302" width="1002" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#ffffff" id="svg_1" height="9.278334" width="150.515158" y="63.348632" x="94.84615" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#ffffff" id="svg_3" height="158.762577" width="29.896853" y="73.657892" x="71.650312" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#ffffff" id="svg_4" height="19.58759" width="110.309057" y="140.668069" x="114.9492" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <rect stroke="#ffffff" id="svg_6" height="22.895686" width="145.360556" y="224.173062" x="98.454382" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <text font-style="normal" font-weight="normal" stroke="#ffffff" transform="matrix(1.0420134351990944,0,0,1.0420134351990944,-10.904913048462141,-17.144216889902154) " xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="187" id="svg_8" y="217.250142" x="260.158142" stroke-opacity="null" stroke-width="0" fill="#ffffff">vomark</text>
+ </g>
+</svg>

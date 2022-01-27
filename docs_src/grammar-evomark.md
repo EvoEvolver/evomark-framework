@@ -5,7 +5,7 @@ title = "Grammars special in Evomark"
 
 === Title ===
 
-========= SlidesBox
+=========> SlidesBox
 
 # Evomark grammars
 
@@ -111,11 +111,23 @@ title = "Config"
 ---
 // TOML inside
 title = "Grammars special in Evomark"
+chatUrl = "https://gitter.im/evoreview/community"
+gitRepoUrl = "https://github.com/EvoEvolver/evomark-framework/tree/main/docs_src"
+---
+--- {lang:"yaml"}
+author: Doomspec
 ---
 --- {src:"authors.toml"} ---
 ====
 
-=========
+Similar to front-matter, in Evomark people can configure the environment by passing a config dictionary to the complier. 
+
+Different from front-matter, Evomark uses TOML as the default config language.
+
+--- Slide ---
+
+
+=========|
 
 # Container examples {id:"container-examples"}
 
@@ -153,10 +165,10 @@ I'm a ugly box produced by the code above.
 ====
 =====
 ==== Code
-=== Box {style:"text-align:center;background-color:green;color:red;"}
-I'm a ugly box produced by the code above.
+=== Box {style:"text-align:center;background-color:blue;color:red;"}
+I'm a box produced by the code above.
 ===
 ====
-=== Box {style:"text-align:center;background-color:green;color:red;"}
-I'm a ugly box produced by the code above.
+=== Box {style:"text-align:center;background-color:#328fa8;color:white;"}
+I'm a box produced by the code above.
 ===

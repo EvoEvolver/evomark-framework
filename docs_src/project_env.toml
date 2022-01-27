@@ -1,4 +1,4 @@
 projectTitle = "Evomark"
-linearize = ["index", "grammar-markdown", "grammar-evomark", "open-source-future", "meta-info", "credit-system","how-design","paper-like-example"]
+linearize = ["index", "install", "grammar-markdown", "grammar-evomark", "slides","open-source-future", "meta-info", "credit-system","how-design","paper-like-example"]
 chatUrl = "https://gitter.im/evoreview/community"
 gitRepoUrl = "https://github.com/EvoEvolver/evomark-framework/tree/main/docs_src"

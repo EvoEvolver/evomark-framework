@@ -85,10 +85,10 @@ bibtex="./public/test.bib" // TOML inside
 ====
 and then cite by `[@citeKey]` like `\cite{citeKey}` in LaTeX. This will produce a cite link the same as in LaTeX and we have already cited [@li2018echarts] above. You can draw a reference list everywhere by using
 ==== Code
-=== ReferenceList ===
+=== CitationList ===
 ====
 as
-=== ReferenceList ===
+=== CitationList ===
 
 ## Paper heading
 You can define the title and author in the `---` config container. Evomark supports `YAML`,`TOML` and relaxed-`JSON` for it. If not specified, the content is treated as `TOML`.
