@@ -15,6 +15,8 @@ Evomark Framework requires the following dependencies to install
 - yarn
 ====
 
+## Platforms specific instructions
+
 ### Ubuntu
 Here we provide script for install the dependencies on ubuntu
 === Code {lang:"bash"}
@@ -36,13 +38,13 @@ Currently, the Evomark frame does not provide graphic user interface. So you nee
 
 ### 中国用户 (Chinese users)
 
-People in the Chinese Local Area Network (CLAN) may need additional setup.
-- Change the npm source to the one inside CLAN `npm config set registry https://registry.npm.taobao.org`.
+People inside the Chinese network may need additional setup.
+- Change the npm source to the one in China by `npm config set registry https://registry.npm.taobao.org`.
 - You may need tools to accelerate the access to GitHub. See [gitclone](https://www.gitclone.com/).
 - After using `gitclone`, if you don't run `yarn` successfully. You may need to change to `npm install`. There might be a bug with `yarn`.
 
 
-### Get ready!
+## Get ready!
 
 With dependencies installed, Evomark framework can be installed by (Here we install it in user's home path)
 === Code {lang:"bash"}
@@ -55,13 +57,21 @@ yarn # Initialize the project by installing the dependencies
 ## Usage
 In the folder that you have installed the Evomark framework, you can initialize a new project by
 === Code {lang:"bash"}
-yarn em-init <project name>
+yarn em-init ./your-project
 ===
 You can preview the new project by starting a development server
 
 === Code {lang:"bash"}
-yarn em-dev <project name/path>
+yarn em-dev ./your-project
 ===
 During the run of the development server, all the change of source file will be detected automatically. Therefore, you don't need to build it by yourself.
 
-Finally, you can go to [http://localhost:3000/](http://localhost:3000/) to see the output of Evomark. I hope you will enjoy it!
+Finally, you can go to [http://localhost:3000/](http://localhost:3000/) to see the output of Evomark. I hope you will enjoy it! 
+
+## Potential Issue
+
+At the current version of Evomark, when you create a new page, you must restart the dev server to load the page. We hope this inconvenience can be solved in the future versions.
+
+## Furthermore
+
+If you want to publish your project on internet, or you are interested in develop the Evomark framework, please follow the instruction in [Build, publish and develop](build-publish-dev).

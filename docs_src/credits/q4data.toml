@@ -1,0 +1,4 @@
+origin = "https://quantumalgorithms.org/"
+license = "CC BY-NC-SA 4.0"
+[[author]]
+name = "Alessandro Luongo"
