@@ -8,6 +8,8 @@ title = "Evomark cheat paper"
 
 ## Markdowns
 
+More detailed guide for Markdown grammars in Evomark is [here](grammar-markdown).
+
 ### Heading
 ===> Code
 # Heading {id:"some-id"}
@@ -40,6 +42,8 @@ Indexed math container
 ===
 
 ## Container
+
+More detailed guide for container, config and inline commands is [here](grammar-evomark).
 
 What a general container looks like
 ===> Code
@@ -98,7 +102,7 @@ Inline commands must begin with brackets.
 [$someCommand](){}
 ===|
 
-`()` accepts plain text and `{}` accepts a JSON key-value pairs.
+`()` accepts plain text and `{}` accepts a JSON key-value pairs. You can go to [#slides-animation] for an example of using `[]()`.
 
 ## Config
 
@@ -177,6 +181,8 @@ You may include them in a `math_macros.toml` file in the project root and then i
 
 ## Slides
 
+More detailed guide for slides is [here](slides).
+
 ### Simplest slides
 
 ===> Code
@@ -198,7 +204,7 @@ section = ""
 =======|
 ===|
 
-### Slides animation
+### Slides animation {id:"slides-animation"}
 
 ===> Code
 =======> SlidesBox
