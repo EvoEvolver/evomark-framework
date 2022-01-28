@@ -1,5 +1,7 @@
 ---
 title = "Grammars special in Evomark"
+nextPage = "slides"
+prevPage = "grammar-markdown"
 ---
 
 === Title ===
@@ -255,6 +257,60 @@ We know that $1+2=3$ and $2+1=3$. Therefore $1+2=2+1$.
 We know that $1+2=3$ and $2+1=3$. Therefore $1+2=2+1$.
 ===
 
+## Table
+
+You can put TOML inside the Table container.
+
+=====> Code
+==== Table
+[[item]]
+Name = "Mike"
+Subject = "Math"
+Grade = "99"
+[[item]]
+Name = "Sarah"
+Subject = "English"
+Grade = "100"
+~~~~
+You can put the caption after the fence
+====
+======|
+
+Here is the effect.
+
+==== Table
+[[item]]
+Name = "Mike"
+Subject = "Math"
+Grade = "99"
+[[item]]
+Name = "Sarah"
+Subject = "English"
+Grade = "100"
+~~~~
+You can put the caption after the fence
+====
+
+You can also use `src` attribute to specify a `.toml`/`.yml`/`.json` file. The file should describe a dictionary with the following structure
+===> Code {lang:"javascript"}
+{
+    item:[
+        {
+            Key1: Value1_1
+            Key2: Value1_2
+            ...
+        },
+        {
+            Key1: Value2_1
+            Key2: Value2_2
+            ...
+        }
+        ...
+    ]
+}
+====|
+
+
 ## Code & Styled Box
 
 ===> Code
@@ -272,7 +328,3 @@ I'm a box produced by the code above.
 === Box {style:"text-align:center;background-color:#328fa8;color:white;"}
 I'm a box produced by the code above.
 ===
-
-# What's next
-
-[Making slides in Evomark](slides)

@@ -1,5 +1,6 @@
 ---
 title = "Introduction to Evomark"
+nextPage = "install"
 ---
 ===> Box {style:"max-width:35rem;margin:auto;"}
 === Image {src:"./evomark.svg"} ===

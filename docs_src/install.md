@@ -1,5 +1,6 @@
 ---
 title = "Install Evomark"
+nextPage = "grammar-markdown"
 ---
 
 === Title ===
@@ -27,16 +28,28 @@ sudo npm install -g yarn
 ### Windows
 For windows, you can go to [https://nodejs.org/en/download/](https://nodejs.org/en/download/) to download and install node&npm.
 
+Git can be downloaded at [https://git-scm.com/downloads](https://git-scm.com/downloads).
+
 Then, yarn can be installed by the installer in [https://classic.yarnpkg.com/latest.msi](https://classic.yarnpkg.com/latest.msi). **You may need to restart to make the installations into effect**.
+
+Currently, the Evomark frame does not provide graphic user interface. So you need to familiarize yourself with basic usage of command lines. You may search `Powershell` for some tutorial. Installing VSCode is strongly encouraged.
+
+### 中国用户 (Chinese users)
+
+People in the Chinese Local Area Network (CLAN) may need additional setup.
+- Change the npm source to the one inside CLAN `npm config set registry https://registry.npm.taobao.org`.
+- You may need tools to accelerate the access to GitHub. See [gitclone](https://www.gitclone.com/).
+- After using `gitclone`, if you don't run `yarn` successfully. You may need to change to `npm install`. There might be a bug with `yarn`.
+
 
 ### Get ready!
 
 With dependencies installed, Evomark framework can be installed by (Here we install it in user's home path)
 === Code {lang:"bash"}
-mkdir evomark-projects
-cd evomark-projects
-curl -o package.json https://raw.githubusercontent.com/EvoEvolver/evomark-starter/main/package.json
-yarn
+mkdir evomark-projects  # Make a new folder for the project
+cd evomark-projects # change directory to the new folder
+curl -o package.json https://raw.githubusercontent.com/EvoEvolver/evomark-starter/main/package.json  # Download the project config file
+yarn # Initialize the project by installing the dependencies
 ===
 
 ## Usage

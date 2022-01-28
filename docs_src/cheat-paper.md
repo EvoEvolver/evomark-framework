@@ -56,6 +56,8 @@ At least **3** characters are needed. The closer should be as long as its opener
 
 ### Common containers
 
+#### Theorem, Figure, Equation
+
 ===> Code
 === Theorem {id:"the-id", title:"the-title"}
 Some content
@@ -68,6 +70,14 @@ The caption
 ===
 ===|
 
+===> Code
+=== Equation {id:"the-id",title:"the-title"}
+E=mc^2
+===
+===|
+
+#### Code, Table
+
 You can use `===>` and `===|` to open and close a container.
 
 ===> Code
@@ -78,6 +88,28 @@ function helloWorld(){
 ==|
 ===|
 
+
+=====> Code
+==== Table
+[[item]]
+Name = "Mike"
+Subject = "Math"
+Grade = "99"
+[[item]]
+Name = "Sarah"
+Subject = "English"
+Grade = "100"
+~~~~
+You can put the caption after the fence
+====
+
+==== Table {src:"some.file.toml"} ====
+
+======|
+
+
+
+
 ### One line containers
 ===> Code
 === Title ===
@@ -86,6 +118,7 @@ function helloWorld(){
 === PaperHead ===
 === ContentTable ===
 ===|
+
 
 ## Inline command
 
@@ -133,6 +166,9 @@ bibPath = "path/to/your/bib-file"
 ### Config on every page
 ===> Code {lang:"toml"}
 title = "Your title"
+prevPage = "your-page-path"
+nextPage.title = "Google"
+nextPage.link = "https://www.google.com"
 ===|
 
 ### Authorship
@@ -166,7 +202,7 @@ You can use `=== PaperHead ===` to show the authorship configured. You can put t
 
 ### Math macros
 
-As the LaTeX math contents usually contains the symbol `\`, which needed to be escaped by `\\` in YAML and JSON, we suggest only use TOML for it. In TOML, you can use '''contents ''' to write literal contents.
+As the LaTeX math contents usually contains the symbol `\`, which needed to be escaped by `\\` in YAML and JSON, we suggest only use TOML for it. In TOML, you can use '''contents ''' to write literal contents. **''' is three single quotes**.
 
 You can write your math macros as
 ===> Code {lang:"toml"}
