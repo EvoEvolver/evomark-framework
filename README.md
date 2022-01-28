@@ -1,6 +1,6 @@
 # Evomark Framework
 
-<div style="max-width=35rem;margin:auto;">
+<div style="margin:auto;">
 
 ![Evomark](./docs_src/evomark.svg)
 
@@ -51,7 +51,7 @@ deploy_path = "./evoevolver"
 ```
 And in `.deploy` there should be the private key `./key.pem` for the ssh server.
 
-With `.deploy` setup, one can call `em-deploy --src <project name/path>`  to deploy.
+With `.deploy` setup, one can call `em-deploy <project name/path>`  to deploy.
 
 You may check the source code to see what is actual happening.
 

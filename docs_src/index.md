@@ -1,10 +1,9 @@
---- {src:"project_env.toml"} ---
 ---
 title = "Introduction to Evomark"
 ---
-==== Box {style:"max-width:35rem;margin:auto;"}
+===> Box {style:"max-width:35rem;margin:auto;"}
 === Image {src:"./evomark.svg"} ===
-====
+===|
 ===  HTML
 <p style="text-align:center;font-size:1.5rem;">
 Powerful website generator for collaborative academia
@@ -39,31 +38,33 @@ Powerful website generator for collaborative academia
 
 # Welcome to the world of Evomark! {id:"docs"}
 
+Please note that Evomark is still developing. The documents do not cover all the features of Evomark. The better way to learn Evomark grammar is direct read the source codes of the documents. The link of the source code is on the right top corner.
+
 **Here are the documents**
 
 - New to Markdown? 
     - [Basic grammars from Markdown](grammar-markdown)
 - Grammars in Evomark.
     - [New grammars in Evomark](grammar-evomark)
-    - [How to make slides in Evomark](slides-evomark)
+    - [How to make slides in Evomark](slides)
 - Our plan on open-source academia
-    - [The future of open-source academia by Evomark](open-source-future).
+    - [The future of open-source academia by Evomark](white-paper).
 
 
 # Finally
 
 Let's make a theorem as easy as 123.
-==== Code
+==> Code
 === Theorem {id:"mc2", title:"Mass and Energy"}
 $$
 E=mc^2
 $$
 ===
-Look at [#mc2]! (Try put your mouse on ⬅)
-====
+Then, try put your mouse on [#mc2]!
+===|
 === Theorem {id:"mc2", title:"Mass and Energy"}
 $$
 E=mc^2
 $$
 ===
-Look at [#mc2]! (Try put your mouse on ⬅)
+Then, try put your mouse on [#mc2]!

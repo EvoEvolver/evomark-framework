@@ -1,4 +1,13 @@
 projectTitle = "Evomark"
-linearize = ["index", "install", "grammar-markdown", "grammar-evomark", "slides","open-source-future", "meta-info", "credit-system","how-design","paper-like-example"]
+linearize = ["index", "install", "grammar-markdown", "grammar-evomark", "slides","open-source-future", "meta-info", "credit-system","how-design","white-paper"]
 chatUrl = "https://gitter.im/evoreview/community"
 gitRepoUrl = "https://github.com/EvoEvolver/evomark-framework/tree/main/docs_src"
+[affils]
+uoft = "Department of Computer Science, University of Toronto, Canada"
+[[author]]
+givenName = "Zi-Jian"
+familyName = "Zhang"
+affil = ["uoft"]
+note = "email"
+[authorNotes]
+email = "zijian.academic@outlook.com"

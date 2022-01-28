@@ -2,8 +2,6 @@
 bibPath = "ref.bib"
 title = "Evomark: marking language for collaborative content production"
 ---
---- {src:"project_env.toml"} ---
---- {src:"author.toml"} ---
 --- {src:"math_config.yml"} ---
 
 === PaperHead ===

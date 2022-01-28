@@ -1,4 +1,3 @@
---- {src:"project_env.toml"} ---
 ---
 title = "Grammars special in Evomark"
 ---
@@ -107,7 +106,7 @@ title = "Config"
 
 # Configuration container
 
-==== Code
+====> Code
 ---
 // TOML inside
 title = "Grammars special in Evomark"
@@ -118,16 +117,117 @@ gitRepoUrl = "https://github.com/EvoEvolver/evomark-framework/tree/main/docs_src
 author: Doomspec
 ---
 --- {src:"authors.toml"} ---
-====
+====|
 
-Similar to front-matter, in Evomark people can configure the environment by passing a config dictionary to the complier. 
-
-Different from front-matter, Evomark uses TOML as the default config language.
+- [$clk]You can configure the compile environment
+    === Voice
+    Similar to front-matter in Markdown, in Evomark people can configure the environment by passing a config dictionary to the complier. 
+    ===
+- [$clk]TOML is the default config language
+    === Voice
+    Different from front-matter, Evomark uses TOML as the default config language.
+    ===
 
 --- Slide ---
 
+# Configured authorship
+
+====> Code {lang:"toml"}
+[affils]
+uoft = "Department of Computer Science, University of Toronto, Canada"
+[[author]]
+givenName = "Zi-Jian"
+familyName = "Zhang"
+affil = ["uoft"]
+note = "email"
+[[author]]
+givenName = "Someone"
+familyName = "Else"
+affil = ["Some university"]
+[authorNotes]
+email = "zijian.academic@outlook.com"
+=====|
+
+=== Voice
+You can use codes similar to the above to configure you author information.
+===
+
+--- Slide ---
+
+# Useful links
+
+- The homepage of TOML: [https://toml.io/en/](https://toml.io/en/)
+- The config file of this project: [project_env.toml](https://github.com/EvoEvolver/evomark-framework/blob/main/docs_src/project_env.toml)
+
+--- Slide 
+section = "Inline commands"
+---
+
+# Inline commands {clk:""}
+=== Voice
+Finally, we introduce the inline-command components of Evomark. Inline commands are some small commands you can use in inline environments like a paragraph.
+===
+- [$clk]Citation & references
+    === Voice
+    You can use inline commands to make citation and references.
+    ===
+
+--- Slide ---
+
+To make citation, first you need to specify the path of the `.bib` file by a config container like
+
+==> Code
+---
+bibPath = "ref.bib"
+---
+==|
+
+And then use `[@theCiteKey]` to cite the entry with `theCiteKey` in the `.bib` file.
+
+--- Slide ---
+
+To make a reference link, you need to specify a `id` to the container you want to refer to like
+===> Code
+=== Theorem {id:"thm"}
+Hello
+===
+===|
+
+Then, you can create a reference link by `[#thm]`.
+
+--- Slide ---
+
+# Useful links
+
+The best way to learn something is to see some examples. You can go to [the example document](white-paper) and see its [source code](https://github.com/EvoEvolver/evomark-framework/blame/main/docs_src/white-paper.md)!
 
 =========|
+
+# Container delimiter with direction (Important)
+
+Evomark supports container delimiters to be the same for opener and closer. However, in some cases you may want to specify it in order to avoid using too long delimiters.
+
+- `==>` is equivalent to `===` opener.
+- `==|` is equivalent to `===` closer.
+
+Children containers can have an opener with the same length to their parents using `==>` and `==|`. Here we give a example.
+==> Code
+==> Box
+==> Box
+I'm allowed.
+==|
+==|
+==|
+
+In contrast, the following code will give out errors.
+==> Code
+=== Box
+=== Box
+I will give out a error.
+===
+===
+==|
+
 
 # Container examples {id:"container-examples"}
 
@@ -157,13 +257,13 @@ We know that $1+2=3$ and $2+1=3$. Therefore $1+2=2+1$.
 
 ## Code & Styled Box
 
-===== Code
+===> Code
 ==== Code
 === Box {style:"text-align:center;background-color:green;color:red;"}
 I'm a ugly box produced by the code above.
 ===
 ====
-=====
+=====|
 ==== Code
 === Box {style:"text-align:center;background-color:blue;color:red;"}
 I'm a box produced by the code above.
@@ -172,3 +272,7 @@ I'm a box produced by the code above.
 === Box {style:"text-align:center;background-color:#328fa8;color:white;"}
 I'm a box produced by the code above.
 ===
+
+# What's next
+
+[Making slides in Evomark](slides)
