@@ -1,5 +1,0 @@
-mathMacros:
-  \ket: "|#1\\rangle"
-  \bra: "\\langle #1|"
-  \trace: "\\operatorname{Tr}"
-  \expectv: "\\langle #1\\rangle"

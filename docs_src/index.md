@@ -44,6 +44,7 @@ Please note that Evomark is still developing. The documents do not cover all the
 
 - New to Markdown? 
     - [Basic grammars from Markdown](grammar-markdown)
+- Concise grammar summary: [Cheat paper for Evomark](cheat-paper)
 - Grammars in Evomark.
     - [New grammars in Evomark](grammar-evomark)
     - [How to make slides in Evomark](slides)
