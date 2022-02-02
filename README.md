@@ -26,7 +26,7 @@
 - **A collaborative academia makes more possibilities**
     - Making knowledge suit the cognition system of human-beings is not easier than making awesome softwares. However, while softwares can gather thousands of people to together develop it, textbooks/online courses usually have authors less than 10.
     - Evomark aims to change this point by providing a marking language that is powerful and easy to read and review, so that contributors' commits can be efficiently reviewed by reviewers of git repos and then being adopted.
-- **Media of academic contents should be TeX and PDF**
+- **Media of academic contents should not be TeX and PDF**
     - TeX focuses more on typesetting but not record of contents and tends to mix up style and contents.
     - HTML is much easier to be analyzed by computer programs. Using HTML to convey academic contents can make large scale automatic analyze of academic contents easier. This point will become more and more important with the development of natural language processing technologies.
     - HTML on modern browsers can be made responsive, so that people can easily read it on small screen devices.

@@ -1,9 +1,0 @@
-[affils]
-uoft = "Department of Computer Science, University of Toronto, Canada"
-[[author]]
-givenName = "Zi-Jian"
-familyName = "Zhang"
-affil = ["uoft"]
-note = "email"
-[authorNotes]
-email = "zijian.academic@outlook.com"

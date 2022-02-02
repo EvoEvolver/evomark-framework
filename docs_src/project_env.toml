@@ -1,6 +1,6 @@
 projectTitle = "Evomark"
 linearize = ["index", "install", "grammar-markdown", "grammar-evomark", "slides","open-source-future", "meta-info", "credit-system","how-design","white-paper"]
-chatUrl = "https://gitter.im/evoreview/community"
+chatUrl = "https://gitter.im/EvoEvolver/community"
 gitRepoUrl = "https://github.com/EvoEvolver/evomark-framework/tree/main/docs_src"
 [license]
 title = "Creative Commons Attribution-ShareAlike 4.0 International License"

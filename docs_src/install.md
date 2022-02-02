@@ -20,11 +20,8 @@ Evomark Framework requires the following dependencies to install
 ### Ubuntu
 Here we provide script for install the dependencies on ubuntu
 === Code {lang:"bash"}
-sudo apt update
-sudo apt -y install nodejs # Install nodejs
-sudo apt -y install # Install npm
-sudo npm install -g n # Update nodejs
-sudo n stable # Update nodejs
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
 sudo npm install -g yarn
 ===
 ### Windows
