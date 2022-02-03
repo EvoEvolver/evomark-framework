@@ -29,7 +29,13 @@ For windows, you can go to [https://nodejs.org/en/download/](https://nodejs.org/
 
 Git can be downloaded at [https://git-scm.com/downloads](https://git-scm.com/downloads).
 
-Then, yarn can be installed by the installer in [https://classic.yarnpkg.com/latest.msi](https://classic.yarnpkg.com/latest.msi). **You may need to restart to make the installations into effect**.
+**You may need to restart to make the installations into effect**.
+
+Then, yarn can be installed via npm 
+=== Code {lang:"bash"}
+npm install --global yarn
+===
+GUI installer is available on [https://github.com/yarnpkg/yarn/releases/](https://github.com/yarnpkg/yarn/releases/) for yarn v1.22.15 and older version.
 
 Currently, the Evomark frame does not provide graphic user interface. So you need to familiarize yourself with basic usage of command lines. You may search `Powershell` for some tutorial. Installing VSCode is strongly encouraged.
 
@@ -49,6 +55,11 @@ mkdir evomark-projects  # Make a new folder for the project
 cd evomark-projects # change directory to the new folder
 curl -o package.json https://raw.githubusercontent.com/EvoEvolver/evomark-starter/main/package.json  # Download the project config file
 yarn # Initialize the project by installing the dependencies
+===
+
+The following command is required to enable yarn scripts on windows Powershell.
+=== Code {lang: "bash"}
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 ===
 
 ## Usage
