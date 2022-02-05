@@ -9,7 +9,7 @@ The [Nuxt3](https://v3.nuxtjs.org/) framework is a very new framework. We choose
 
 To deploy a project, you should create a folder named `.deploy` in the project's root, with a file `config.toml` inside.
 The content of `config.toml` should be
-=== Code {lang="toml"}
+=== Code {lang:"toml"}
 host = "your.host.ip.addr"
 ssh_key = "./key.pem"
 ssh_addr = "your.server.ip.addr"
@@ -19,7 +19,7 @@ deploy_path = "./evomark-project"
 And in `.deploy` there should be the private key `./key.pem` for the ssh server.
 
 With `.deploy` setup, one can call 
-=== Code {lang="bash"}
+=== Code {lang:"bash"}
 yarn em-build ./your-project
 yarn em-deploy ./your-project
 ===
@@ -29,7 +29,7 @@ to build and deploy the project.
 
 If you are interested in develop this framework, you can first clone this repo, and setup the environment by running the following commands in the root.
 
-=== Code {lang="bash"}
+=== Code {lang:"bash"}
 mkdir packages
 cd packages
 git clone https://github.com/EvoEvolver/evomark-loader.git

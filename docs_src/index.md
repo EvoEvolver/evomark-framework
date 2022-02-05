@@ -40,11 +40,6 @@ Powerful website generator for collaborative academia
     You can make next generation of academic contents with interactive components, sematic HTML tags and even blockchain.
 
 
-<!-- - **Automatic presentation tools built-in**
-    - You can make not only slides, but automatic presentation which can speak by Evomark. 
-    - Every single sentences in the presentation can be changed by modify the source code.
- -->
-
 # Ideas
 
 - **A collaborative academia makes more possibilities**
