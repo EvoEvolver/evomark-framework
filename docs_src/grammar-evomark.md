@@ -316,7 +316,7 @@ You can also use `src` attribute to specify a `.toml`/`.yml`/`.json` file. The f
 ===> Code
 ==== Code
 === Box {style:"text-align:center;background-color:green;color:red;"}
-I'm a ugly box produced by the code above.
+I'm a box produced by the code above.
 ===
 ====
 =====|

@@ -1,6 +1,6 @@
 --- {src:"project_env.toml"} ---
 ---
-title = "Writing slides by Evomark"
+title = "Slides in non-English languages"
 ---
 
 Here, we provide sample slides of lyrics from non-English languages.

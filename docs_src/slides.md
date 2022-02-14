@@ -128,6 +128,37 @@ You can add voices in the slides by using the `Voice` container. The `Voice` con
 [$clk](then) I'm a hidden paragraph!
 ===|
 
+# Columns
+
+You can divide your slides into columns by `Cols` as below.
+
+====> Code
+=====> SlidesBox
+=====> Cols {widths:[1,2,1]}
+Col1
+~~~~~~
+=== Box {style:"background-color:red;"}
+Col2
+===
+~~~~~~
+Col2
+======|
+======|
+====|
+
+Here, we specified the widths of the columns. If the attribute `widths` is left blank, equally spaced columns will be produced. The effect of the above code is shown below.
+
+=====> SlidesBox
+=====> Cols {widths:[1,2,1]}
+Col1
+~~~~~~
+=== Box {style:"background-color:red;"}
+Col2
+===
+~~~~~~
+Col2
+======|
+======|
 
 # Multi-language support
 
@@ -136,4 +167,4 @@ You can set the voice language of a slides by opening it like
 =====> SlidesBox {voiceLang: "Japanese"}
 ======|
 
-[Non-English Language](voice-language)
+See more in [#@voice-language].
